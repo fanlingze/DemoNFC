@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flz.demonfc">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- 要求当前设备必须要有NFC芯片 -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RunAppActivity"
+            android:label="@string/str_run_app"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RunUrlActivity"
+            android:label="@string/str_run_url"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ReadTextActivity"
+            android:label="@string/str_read_text"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".WriteTextActivity"
+            android:label="@string/str_write_text"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ReadUriActivity"
+            android:label="@string/str_read_uri"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".WriteUriActivity"
+            android:label="@string/str_write_uri"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ReadMUActivity"
+            android:label="@string/str_read_mu"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".WriteMUActivity"
+            android:label="@string/str_write_mu"
+            android:launchMode="singleTop" />
+        <activity android:name=".BeamActivity"></activity>
+    </application>
+
+</manifest>
